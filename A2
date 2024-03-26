@@ -1,0 +1,64 @@
+using System;
+
+namespace Ritterturnier
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //string welcome = "welcome";
+        
+
+            Console.WriteLine("Welcome to Ritterturnier");
+            string welcome = Console.ReadLine();
+
+            Console.WriteLine("Select one knight to start");
+            //string knight1 = "White";
+            // string knight2 = "Black";
+            //  string knight3 = "Red";
+
+
+            var names = new string[] { "White", "Black", "Red" };
+
+            names = [.. names];
+
+            foreach (var name in names)
+            {
+                Console.WriteLine($"Knight {name.ToUpper()}");
+
+            }
+            // string select = "select"
+            //each knight has 100 lifepoints 
+
+            string knight = "White";
+            string select = Console.ReadLine();
+
+            if (knight == "White")
+            {
+                Console.WriteLine("100 lifepoints");
+               
+            }
+            else if (knight == "Black")
+            { 
+            Console.WriteLine("100 lifepoints");
+            }
+            else
+            {
+                Console.WriteLine("100 lifepoints");
+            }
+
+            string start = Console.ReadLine();
+            Console.WriteLine("Battle Start");
+            // string start = "start"
+
+
+           
+        }
+
+
+
+
+    }
+
+
+    }
